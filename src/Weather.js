@@ -25,30 +25,39 @@ export default function Weather() {
         </form>
       </header>
 
-      <h1>Paris</h1>
-      <ul>
-        <li>Wednesday 14:30, broken clouds</li>
-      </ul>
-
-      <div className="row mt-3">
-        <div className="col-6 ">
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-            alt="broken clouds"
-          />
-
-          <span className="main-temperature">26</span>
-          <span className="unit">ºC</span>
-        </div>
-
-        <div className="col-6 ">
+      <div className="row">
+        <div className="col-6">
+          <h1 className="mt-4">Paris</h1>
           <ul>
-            <li>Humidity:46%</li>
-            <li>Wind: 5.14km/h</li>
-            <li>Precipitation: 0%</li>
+            <div className="weather-app-details"></div>
+            <li>Wednesday 14:30, broken clouds</li>
           </ul>
         </div>
+
+        <div className="col-6">
+          <div className="main-weather mt-4">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              alt="broken clouds"
+            />
+
+            <span className="main-temperature">26</span>
+            <span className="unit">ºC</span>
+          </div>
+        </div>
       </div>
+
+      <ul>
+        <li>
+          Humidity: <strong className="weather-details">46%</strong>
+        </li>
+        <li>
+          Wind: <strong className="weather-details">5.14km/h</strong>
+        </li>
+        <li>
+          Precipitation: <strong className="weather-details">0%</strong>
+        </li>
+      </ul>
     </div>
   );
 }
