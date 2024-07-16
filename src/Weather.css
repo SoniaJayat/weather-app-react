@@ -52,6 +52,10 @@ body {
   color: #a8a6b4;
 }
 
+.Weather .date-description {
+  color: #a8a6b4;
+}
+
 .Weather img {
   float: left;
 }
