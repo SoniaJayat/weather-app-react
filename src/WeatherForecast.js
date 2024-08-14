@@ -8,13 +8,11 @@ export default function WeatherForecast(props) {
   let [forecast, setForecast] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
     setForecast(response.data.daily);
     setLoaded(true);
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="WeatherForecast mt-5">
         <div className="row">
@@ -26,6 +24,7 @@ export default function WeatherForecast(props) {
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>
