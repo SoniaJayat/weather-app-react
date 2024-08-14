@@ -8,7 +8,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <h1 className="mt-4 text-center">{props.data.city}</h1>
       <div className="Main-Weather-Data">
-        <div className="main-weather mt-4">
+        <div className="main-weather mt-3">
           <img src={props.data.iconUrl} alt={props.data.description} />
 
           <UnitConversion celsius={props.data.temperature} />
@@ -16,7 +16,7 @@ export default function WeatherInfo(props) {
       </div>
 
       <ul>
-        <li className="date-description text-capitalize mt-3 text-center ">
+        <li className="date-description text-capitalize text-center ">
           <FormattedDate date={props.data.date} />
           {props.data.description}
         </li>
