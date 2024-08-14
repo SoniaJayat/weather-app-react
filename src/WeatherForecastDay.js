@@ -24,10 +24,11 @@ export default function WeatherForecastDay(props) {
       {" "}
       <div className="col">
         <div className="WeatherForecast-day">{day()}</div>
-        <div className="WeatherIcon">
-          {" "}
-          `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/$
-          {props.data.condition.icon}.png`
+        <div className="ForecastIcon d-flex justify-content-center  ">
+          <img
+            src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.data.condition.icon}.png`}
+            alt={props.data.condition.description}
+          />
         </div>
         <div className="WeatherForecast-temperatures">
           <span className="WeatherForecast-temperature-max">

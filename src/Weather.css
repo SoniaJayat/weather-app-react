@@ -41,6 +41,7 @@ body {
 
 .Weather h1 {
   font-weight: bold;
+  font-size: 50px;
 }
 .Weather ul {
   margin: 0;
@@ -58,6 +59,8 @@ body {
 
 .Weather img {
   float: left;
+  position: relative;
+  top: -10px;
 }
 
 .weather-app-data {
@@ -66,19 +69,24 @@ body {
 
 .Weather .main-temperature {
   font-weight: bold;
-  font-size: 88px;
-  line-height: 88px;
+  font-size: 75px;
+  line-height: 75px;
   color: black;
 }
 
 .Weather .unit {
-  font-size: 28px;
+  font-size: 20px;
   position: relative;
-  top: -40px;
+  top: -20px;
   line-height: 1;
   color: black;
+  margin-left: 5px;
 }
 
+.Main-Weather-Data {
+  display: flex;
+  justify-content: center;
+}
 .Weather .weather-details {
   color: #2fa8f9;
 }
@@ -87,6 +95,19 @@ body {
   border-bottom: 1px solid #f9f7fe;
 }
 
+.list-sortation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.UnitConversion {
+  display: flex;
+  align-items: center;
+}
+
 footer a {
   color: #885df1;
+}
+
+@media (max-width: 960px) {
 }
