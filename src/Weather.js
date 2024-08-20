@@ -55,7 +55,7 @@ export default function Weather(props) {
                 <input
                   type="submit"
                   value="Search"
-                  className="submit btn btn-primary  "
+                  className="submit btn btn-primary"
                 />
               </div>
             </div>
@@ -67,6 +67,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return null;
+    return "Loading...";
   }
 }

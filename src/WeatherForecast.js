@@ -28,7 +28,7 @@ export default function WeatherForecast(props) {
                 </div>
               );
             } else {
-              return null;
+              return "Loading...";
             }
           })}
         </div>
@@ -42,7 +42,5 @@ export default function WeatherForecast(props) {
 `;
 
     axios.get(apiUrl).then(handleResponse);
-
-    return null;
   }
 }
